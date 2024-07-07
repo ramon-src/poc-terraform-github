@@ -1,5 +1,5 @@
 module "repository" {
-  for_each = local.repos
+  for_each = merge(local.repos)
   source = "ALT-F4-LLC/repository/github"
   version = "0.5.0"
 
